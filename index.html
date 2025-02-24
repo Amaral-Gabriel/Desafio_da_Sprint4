@@ -12,10 +12,11 @@
     <header>
         <div class="cabecalho">
             <img src="assets/logo-ford-256.png" alt="Logo da Ford com letras brancas e fundo azul">
-            <span id="burguer_Menu" class="material-icons" onclick="click_Burguer()">menu</span>
-            <span id="burguer_Close" class="material-icons" onclick="click_Burguer()">close</span>
-        </div>    
+            <button id="menu_Burguer" class="material-icons-outlined" onclick="open_Burguer()">menu</button>
+        </div>  
+         
         <menu id="itens">
+            <span href="javascript:void(0)" id="close_Burguer" class="material-icons-outlined" onclick="close_Burguer()">close</span>
             <ul>
                 <li>
                     <a href="#"><span class="material-icons-outlined">home</span> Home</a></li>
@@ -27,7 +28,13 @@
         </menu>
     </header>
     <main>
-        <h1>Conteudo</h1>
+        <div id="conteudo_Principal">
+            <img id="imagem_Principal" src="assets/ranger-principal.jpg" alt="Foto da nova Ranger na cor preta">
+            <h1 id="titulo_Principal">Essa é a nova <br> <strong>Ford Ranger 2022</strong></h1>
+        </div>
+        <div>
+            <h2 id="subtitulo_novidades">Confira agora as novidades</h2>
+        </div>
     </main>
     <footer></footer>
     <script src="app.js"></script>
