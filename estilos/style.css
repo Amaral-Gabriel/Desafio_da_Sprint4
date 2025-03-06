@@ -98,7 +98,7 @@ header > .cabecalho > img {
     z-index: 5; 
     top: 0;
     right: -20%; 
-    background-color: #c9c9c9;
+    background-color: var(--cor-azul-escuro);
     overflow-x: hidden; 
     transition: width 0.3s ease, right 0.3s ease;
     display: flex;
@@ -124,7 +124,7 @@ header > .cabecalho > img {
     margin: 0; 
     text-decoration: none;
     font-size: 20px;
-    color: var(--cor-azul-escuro);
+    color: white;
     display: flex; 
     align-items: center;
     transition: 0.5s;
@@ -148,7 +148,7 @@ header > .cabecalho > img {
     margin: 0;
     position: absolute;
     border: 0;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: white;
     color: var(--cor-azul-escuro);
     font-size: 30px;
     top: 31px;
@@ -161,7 +161,8 @@ header > .cabecalho > img {
     right: 25px;
     cursor: pointer;
     font-size: 30px;
-    color: var(--cor-azul-escuro);
+    background-color: var(--cor-azul-escuro);
+    color: white;
     z-index: 6;
 }
 
@@ -195,6 +196,7 @@ main {
     width: 100%;
     height: auto;  
     object-fit: cover; 
+    box-shadow: 0px -14px 20px 5px rgba(0, 0, 0, 0.151);
 }
 
 #titulo_Principal {

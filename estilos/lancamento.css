@@ -166,6 +166,64 @@ header > .cabecalho > img {
     z-index: 6;
 }
 
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    flex: 1;
+}
+
+
+
+
+.video-container {
+    position: relative;
+    width: 100vw;
+    margin: 0 auto; /* Centraliza o container */
+    padding-top: 100%; /* Proporção 16:9 para vídeos */
+}
+
+#video_Principal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    border: 0;
+}
+
+/* Opcional: ajustes para telas muito pequenas */
+@media (min-width: 600px) {
+    .video-container {
+        padding-top: 56.25%; /* Proporção 4:3 para mobile */
+    }
+}
+
+#veiculos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info_Carro {
+    max-width: 99vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.input_Box {
+    background-color: white;
+
+    accent-color: var(--cor-azul-claro);
+}
+
+
+
 
 /* Footer */
 footer {
