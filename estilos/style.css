@@ -323,15 +323,19 @@ footer {
 
 .redes_Sociais {
     display: flex;
-    margin-left: 5vw;
-    font-size: 20px;
+
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.redes_Sociais > p {
+    width: auto;
+}
+
 .logo_Redes > a > img {
-    width: 5vw;
+    width: 4vw;
     max-width: 40px;
     min-width: 20px;
     height: auto;

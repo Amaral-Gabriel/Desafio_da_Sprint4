@@ -166,6 +166,194 @@ header > .cabecalho > img {
     z-index: 6;
 }
 
+main {
+    width: 100vw;
+    background-color: white;
+    flex: 1;
+
+}
+
+#conteudo_Principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo_Principal > img {
+    width: 80vw;
+    height: auto;
+    display: block;
+}
+
+@media only screen and (min-width: 600px) {
+    #conteudo_Principal {
+        flex-direction: row;
+    }
+    #conteudo_Principal > img {
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #conteudo_Principal > img {
+        width: 30vw;
+    }
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    font-family: "Antenna",Arial, Helvetica, sans-serif;
+  }
+  
+  .title {
+    font-family: "Antenna",Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: var(--cor-azul-escuro);
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: var(--cor-azul-escuro);
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: var(--cor-azul-escuro);
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: var(--cor-azul-escuro);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Antenna",Arial, Helvetica, sans-serif;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: var(--cor-azul-escuro);
+  }
+  
+  .signin a:hover {
+    text-decoration: underline var(--cor-azul-escuro);
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid var(--cor-azul-escuro);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: var(--cor-azul-escuro);
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+
+  
+  .submit {
+    font-family: "Antenna",Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    background-color: var(--cor-azul-escuro);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: var(--cor-azul-claro);
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+input[type=text]:focus, input[type=email]:focus, input[type=number]:focus, select:focus {
+    border: 1px solid var(--cor-azul-claro);
+    font-family: "Antenna",Arial, Helvetica, sans-serif;
+}
+
+select {
+    font-family: "Antenna",Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid var(--cor-azul-escuro);
+    border-radius: 10px;
+    color: lightslategray;
+}
+
+
 
 /* Footer */
 footer {
@@ -183,15 +371,15 @@ footer {
 
 .redes_Sociais {
     display: flex;
-    margin-left: 5vw;
-    font-size: 20px;
+
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .logo_Redes > a > img {
-    width: 5vw;
+    width: 4vw;
     max-width: 40px;
     min-width: 20px;
     height: auto;

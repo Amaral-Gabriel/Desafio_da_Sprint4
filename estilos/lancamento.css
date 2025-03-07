@@ -167,59 +167,147 @@ header > .cabecalho > img {
 }
 
 main {
-    height: 100vh;
     width: 100vw;
     background-color: white;
     flex: 1;
 }
 
 
-
-
 .video-container {
-    position: relative;
-    width: 100vw;
-    margin: 0 auto; /* Centraliza o container */
-    padding-top: 100%; /* Proporção 16:9 para vídeos */
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+
+
 }
 
 #video_Principal {
-    position: absolute;
-    top: 0;
-    left: 0;
+
     width: 100%;
-    height: 60%;
-    border: 0;
+    height: 100%; /* Alterado de 60% */
+
 }
 
-/* Opcional: ajustes para telas muito pequenas */
+
 @media (min-width: 600px) {
     .video-container {
-        padding-top: 56.25%; /* Proporção 4:3 para mobile */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 60vh;
     }
-}
+}  
 
 #veiculos {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5vw;
 
 }
 
-.info_Carro {
-    max-width: 99vw;
+.carro {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5px;
+    flex-direction: column;
+    align-items: center; 
+    width: 300px; 
+}
+
+
+.info_Carro {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.11);
+    color: var(--cor-azul-escuro);
+}
+
+.titulo_Preco > a {
+    color: var(--cor-azul-escuro);
+    text-decoration: none;
+}
+
+.carro img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
 }
 
 .input_Box {
-    background-color: white;
-
     accent-color: var(--cor-azul-claro);
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.preco {
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#simbolo_Info {
+    width: 16px;
+    height: 16px;
+}
+
+@media (min-width: 992px) {
+    #veiculos {
+        flex-direction: row;
+    }
+} 
+
+#compare {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+button a {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_Comparar {
+    transition: all 0.3s ease-in-out;
+}
+  
+.botao_Comparar {
+    transition: all 0.3s ease-in-out;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, #1b357e  0%, #1351d8 50%, #265ed6  100%);
+    box-shadow: 0 20px 30px -6px #265ed656;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+  
+.botao_Comparar:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+  
+.botao_Comparar:active {
+    opacity: 0.5;
 }
 
 
@@ -241,15 +329,15 @@ footer {
 
 .redes_Sociais {
     display: flex;
-    margin-left: 5vw;
-    font-size: 20px;
+
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .logo_Redes > a > img {
-    width: 5vw;
+    width: 4vw;
     max-width: 40px;
     min-width: 20px;
     height: auto;
