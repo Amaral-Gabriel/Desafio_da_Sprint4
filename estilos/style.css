@@ -193,10 +193,15 @@ main {
 }
 
 #imagem_Principal {
-    width: 100%;
+    width: 100vw;
     height: auto;  
-    object-fit: cover; 
+    /* object-fit: cover;  */
     box-shadow: 0px -14px 20px 5px rgba(0, 0, 0, 0.151);
+}
+
+a > img {
+    width: 100%;
+    object-fit: cover; 
 }
 
 #titulo_Principal {
