@@ -350,7 +350,7 @@ select {
     outline: 0;
     border: 1px solid var(--cor-azul-escuro);
     border-radius: 10px;
-    color: lightslategray;
+    background-color: #fff;
 }
 
 textarea {
