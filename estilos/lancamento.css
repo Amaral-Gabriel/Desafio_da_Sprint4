@@ -82,6 +82,10 @@ header > .cabecalho > img {
 
 }
 
+nav > button {
+    border: 0;
+}
+
 #menu_Bar {
     display: none;
     justify-self: center;
@@ -302,10 +306,10 @@ button a {
 }
   
 .botao_Comparar:hover {
-    transform: translateY(3px);
+    transform: translateY(-3px);
     box-shadow: none;
 }
-  
+
 .botao_Comparar:active {
     opacity: 0.5;
 }
@@ -359,43 +363,6 @@ footer {
 
 
 
-
-
-
-
-/* Media Query */
-@font-face{
-    font-family: "Antenna";
-    src: url("assets/font/ford-antenna-regular-xcnd-589558121012a.woff");
-}
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-.material-icons-outlined {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-  
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-}
-
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
@@ -403,9 +370,7 @@ footer {
 
     #menu_Burguer {display: none;}
 
-
     #menu_Bar {
-
         padding: 0;
         margin: 0;
         top: 10px;
@@ -413,7 +378,6 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 0 5vw;
-    
     }
     #menu_Bar > a {
         font-family: "Antenna", Arial, Helvetica, sans-serif;
@@ -453,78 +417,20 @@ footer {
         
     }
 
-
-    .imagem_Principal_Mobile {
-        display: none; 
-    }
-    .imagem_Principal_Desktop {
-        display: block; 
-    }
-    #titulo_Principal {
-        font-size: 7vw;
-        letter-spacing: 2px;
-        font-weight: 100;
-        line-height: 9vw;
-    }
-    #titulo_Forte {
-        font-size: 12vw;
-    }
-    #caixa_Informacao {
-        height: 20vw;
-        font-size: 3vw;
-    }
-
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    #titulo_Principal {
-        font-size: 7vw;
-        letter-spacing: 1px;
-        line-height: 8vw;
-    }
-    #titulo_Forte {
-        font-size: 12vw;
-    }
-    #caixa_Informacao {
-        height: 20vw;
-        font-size: 2vw;
-    }
-    #novidade {
-        padding: 100px 50px;
-    }
-    #novidade > h1 {
-        font-size: 3rem;
-        
-    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    #imagem_Principal {
-        width: 95%;
-    }
-    #caixa_Informacao {
-        justify-self: center;
-        width: 95%;
-    }
-    #titulo_Principal {
-        font-size: 5vw;
-        letter-spacing: 1px;
-        line-height: 7vw;
-    }
-    #titulo_Forte {
-        font-size: 9vw;
-    }
     footer {
         padding: 2vw;
     }
     .redes_Sociais {
         margin-left: 2vw;
     }
-    #caixa_Informacao {
-        height: 20vw;
-        font-size: 2vw;
-    }
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
