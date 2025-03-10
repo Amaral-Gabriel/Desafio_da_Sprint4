@@ -12,12 +12,12 @@
 <body>
     <header>
         <div class="cabecalho">
-            <img src="assets/logo-ford-256.png" alt="Logo da Ford com letras brancas e fundo azul">
+            <img src="assets/imagens/logo-ford-256.png" alt="Logo da Ford com letras brancas e fundo azul">
             <button id="menu_Burguer" class="material-icons-outlined" onclick="open_Burguer()">menu</button>
         </div>  
          
-        <menu id="itens">
-            <span href="javascript:void(0)" id="close_Burguer" class="material-icons-outlined" onclick="close_Burguer()">close</span>
+        <nav id="itens">
+            <button href="javascript:void(0)" id="close_Burguer" class="material-icons-outlined" onclick="close_Burguer()">close</button>
             <ul>
                 <li>
                     <a href="index.html"><span class="material-icons-outlined">home</span> Home</a></li>
@@ -26,7 +26,7 @@
                 <li>
                     <a href="contato.html"><span class="material-icons-outlined">call</span> Contato</a></li>
             </ul>
-        </menu>
+        </nav>
         <nav id="menu_Bar">
             <a class="opcao" href="index.html">Home</a>
             <a class="opcao" href="lancamento.html">Lançamento</a>
@@ -34,15 +34,15 @@
         </nav>
     </header>
     <main>
-        <div id="conteudo_Principal">
+        <section id="conteudo_Principal">
             <a id="imagem_Principal" href="lancamento.html">
-                <img  class="imagem_Principal_Mobile" src="assets/img-principal-mobile.jpg" alt="Foto da nova Ranger na cor preta">
-                <img  class="imagem_Principal_Desktop" src="assets/img-principal-desktop.jpg" alt="Foto da nova Ranger na cor preta">
+                <img  class="imagem_Principal_Mobile" src="assets/imagens/img-principal-mobile.jpg" alt="Foto da nova Ranger na cor preta">
+                <img  class="imagem_Principal_Desktop" src="assets/imagens/img-principal-desktop.jpg" alt="Foto da nova Ranger na cor preta">
             </a>
             <h1 id="titulo_Principal">Essa é a nova <br> <strong id="titulo_Forte">Ranger 2022</strong></h1>
-        </div>
+        </section>
         
-        <div id="caixa_Informacao">
+        <section id="caixa_Informacao">
             <div class="informacao">
                 <p class="titulo_Informacao">Motor</p>
                 <p>2.2 ou<br>3.3 Diesel</p>
@@ -58,24 +58,24 @@
                 <p>ABS nas<br>4 rodas</p>
             </div>
             
-        </div>
-        <div id="novidade">
+        </section>
+        <section id="novidade">
             <h1>Clique e conheça as novidades da Ford Ranger 2022</h1>
             <button class="botao_Ranger"><a href="lancamento.html">Nova Ranger <span class="material-icons-outlined">keyboard_arrow_right</span></a></button>
-        </div>
+        </section>
 
     </main>
     <footer>
         <div class="redes_Sociais">
             <p>Redes Sociais</p>
             <div class="logo_Redes">
-                <a class="icone_Social" href="https://www.instagram.com/fordbrasil/" target="_blank"><img src="assets/instagram-logo-50.png" alt="Logo do Instagram"></a>
-                <a class="icone_Social" href="https://www.facebook.com/ford/" target="_blank"><img src="assets/facebook-50.png" alt="Logo do Facebook"></a>
-                <a class="icone_Social" href="https://www.youtube.com/@fordbrasil" target="_blank"><img src="assets/youtube-squared-50.png" alt="Logo do Youtube"></a>
+                <a class="icone_Social" href="https://www.instagram.com/fordbrasil/" target="_blank"><img src="assets/imagens/instagram-logo-50.png" alt="Logo do Instagram"></a>
+                <a class="icone_Social" href="https://www.facebook.com/ford/" target="_blank"><img src="assets/imagens/facebook-50.png" alt="Logo do Facebook"></a>
+                <a class="icone_Social" href="https://www.youtube.com/@fordbrasil" target="_blank"><img src="assets/imagens/youtube-squared-50.png" alt="Logo do Youtube"></a>
             </div>
         </div>
         <div class="copy_Right">
-            <img src="assets/ford-96.png" alt="Logo da Ford">
+            <img src="assets/imagens/ford-96.png" alt="Logo da Ford">
         </div>
     </footer>
     <script src="app.js"></script>

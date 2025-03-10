@@ -11,12 +11,12 @@
 <body>
     <header>
         <div class="cabecalho">
-            <img src="assets/logo-ford-256.png" alt="Logo da Ford com letras brancas e fundo azul">
+            <img src="assets/imagens/logo-ford-256.png" alt="Logo da Ford com letras brancas e fundo azul">
             <button id="menu_Burguer" class="material-icons-outlined" onclick="open_Burguer()">menu</button>
         </div>  
          
-        <menu id="itens">
-            <span href="javascript:void(0)" id="close_Burguer" class="material-icons-outlined" onclick="close_Burguer()">close</span>
+        <nav id="itens">
+            <button href="javascript:void(0)" id="close_Burguer" class="material-icons-outlined" onclick="close_Burguer()">close</button>
             <ul>
                 <li>
                     <a href="index.html"><span class="material-icons-outlined">home</span> Home</a></li>
@@ -25,7 +25,7 @@
                 <li>
                     <a href="contato.html"><span class="material-icons-outlined">call</span> Contato</a></li>
             </ul>
-        </menu>
+        </nav>
         <nav id="menu_Bar">
             <a class="opcao" href="index.html">Home</a>
             <a class="opcao" href="lancamento.html">Lançamento</a>
@@ -36,37 +36,22 @@
         <div id="conteudo_Principal">
 
             
-            <img src="assets/xls 2.2 diesel.jpg" alt="Ranger 2022 XLS na cor vermelha">
+            <img src="assets/imagens/xls 2.2 diesel.jpg" alt="Ranger 2022 XLS na cor vermelha">
             <form class="form">
                 <p class="title">Contato </p>
                 <p class="message">Sobre você </p>
-                    <div class="flex">
-                    <label>
-                        <input required="" placeholder="NOME" type="text" class="input">
-                    </label>
-            
-                    <label>
-                        <input required="" placeholder="SOBRENOME" type="text" class="input">
-                    </label>
+                <div class="flex">
+                    <input required="" placeholder="NOME" type="text" class="input">
+                    <input required="" placeholder="SOBRENOME" type="text" class="input">
                 </div>  
-                    
-                <label>
-                    <input required="" placeholder="EMAIL" type="email" class="input">
-                </label> 
-                    
-                <label>
-                    <input required="" placeholder="CPF" type="number" class="input">
-                </label>
-                <select aria-placeholder="Tipo de contato">
+                <input required="" placeholder="EMAIL" type="email" class="input">
+                <select aria-placeholder="Tipo de contato" class="input">
                     <option value="" disabled selected>TIPO DE CONTATO</option>
-                    <option value="Elogio">Elogio</option>
-                    <option value="Reclamação">Reclamação</option>
-                    <option value="Solicitação">Solicitação</option>
+                    <option value="Elogio">ELOGIO</option>
+                    <option value="Reclamação">RECLAMAÇÃO</option>
+                    <option value="Solicitação">SOLICITAÇÃO</option>
                   </select>
-                <label>
-                    <textarea class="input" name="" id="" cols="30" rows="10"placeholder="MENSAGEM"></textarea>
-                    
-                </label>
+                <textarea class="input" name="" id="" cols="30" rows="10"placeholder="MENSAGEM"></textarea>
                 <button class="submit">Enviar</button>
             </form>
         </div>
@@ -76,13 +61,13 @@
         <div class="redes_Sociais">
             <p>Redes Sociais</p>
             <div class="logo_Redes">
-                <a class="icone_Social" href="https://www.instagram.com/fordbrasil/" target="_blank"><img src="assets/instagram-logo-50.png" alt="Logo do Instagram"></a>
-                <a class="icone_Social" href="https://www.facebook.com/ford/" target="_blank"><img src="assets/facebook-50.png" alt="Logo do Facebook"></a>
-                <a class="icone_Social" href="https://www.youtube.com/@fordbrasil" target="_blank"><img src="assets/youtube-squared-50.png" alt="Logo do Youtube"></a>
+                <a class="icone_Social" href="https://www.instagram.com/fordbrasil/" target="_blank"><img src="assets/imagens/instagram-logo-50.png" alt="Logo do Instagram"></a>
+                <a class="icone_Social" href="https://www.facebook.com/ford/" target="_blank"><img src="assets/imagens/facebook-50.png" alt="Logo do Facebook"></a>
+                <a class="icone_Social" href="https://www.youtube.com/@fordbrasil" target="_blank"><img src="assets/imagens/youtube-squared-50.png" alt="Logo do Youtube"></a>
             </div>
         </div>
         <div class="copy_Right">
-            <img src="assets/ford-96.png" alt="Logo da Ford">
+            <img src="assets/imagens/ford-96.png" alt="Logo da Ford">
         </div>
     </footer>
     <script src="app.js"></script>
