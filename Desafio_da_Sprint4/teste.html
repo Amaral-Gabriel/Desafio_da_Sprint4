@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamento - Veículo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Estilo da área superior (vídeo e descrição) */
+        .top-section {
+            text-align: center;
+            background-color: #000;
+            padding: 20px;
+            color: white;
+        }
+
+        .top-section video {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .top-section p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Estilo da área central (imagens do veículo) */
+        .middle-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .middle-section img {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo da área inferior (tabela de modelos e valores) */
+        .bottom-section {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .table-container {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .checkbox {
+            margin-right: 10px;
+        }
+
+        .compare-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .compare-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Área superior com o vídeo e descrição -->
+    <div class="top-section">
+        <video controls>
+            <source src="video-promo.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+        <p>Descubra o novo <strong>Veículo X</strong> - Inovação, design e performance em um só lugar.</p>
+    </div>
+
+    <!-- Área central com as imagens do veículo -->
+    <div class="middle-section">
+        <img src="imagem1.jpg" alt="Imagem do Veículo 1">
+        <img src="imagem2.jpg" alt="Imagem do Veículo 2">
+        <img src="imagem3.jpg" alt="Imagem do Veículo 3">
+    </div>
+
+    <!-- Área inferior com a tabela de modelos e valores -->
+    <div class="bottom-section">
+        <h2>Modelos e Valores</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Valor</th>
+                        <th>Comparar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Modelo A</td>
+                        <td>R$ 50.000</td>
+                        <td><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Modelo B</td>
+                        <td>R$ 60.000</td>
+                        <td><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Modelo C</td>
+                        <td>R$ 70.000</td>
+                        <td><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="compare-btn" onclick="alert('Função de comparação não implementada.')">Comparar</button>
+    </div>
+
+</body>
+</html>
