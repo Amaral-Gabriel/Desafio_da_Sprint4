@@ -1,23 +1,7 @@
 :root {
-    /* Cores */
-    --color-primary: #1b357e;
-    --color-secondary: #1351d8;
-    
-    /* Espaçamentos */
-    --spacing-sm: 8px;
-    --spacing-md: 16px;
-    
-    /* Fontes */
-    --font-primary: "Antenna", sans-serif;
-    --font-secondary: "Roboto", sans-serif;
-  }
-  
-  /* media-query.css */
-  @media (min-width: 768px) {
-    :root {
-      --spacing-md: 24px;
-    }
-  }
+    --cor-azul-escuro: #1b357e;
+    --cor-azul-claro: #1351d8;
+}
 
 @font-face{
     font-family: "Antenna";
@@ -175,7 +159,6 @@ header > .cabecalho > img {
     position: absolute;
     top: 31px;
     right: 25px;
-    border: 0;
     cursor: pointer;
     font-size: 30px;
     background-color: var(--cor-azul-escuro);
@@ -260,13 +243,11 @@ a > img {
     color: rgb(138, 138, 138);
     letter-spacing: 1px;
     font-weight: normal;
-    text-align: center;
 }
 
 .informacao {
     letter-spacing: 3px;
     font-weight: bold;
-    text-align: center;
 }
 
 .linha-vertical {
