@@ -1,12 +1,13 @@
 :root {
-    --cor-azul-escuro: #1b357e;
-    --cor-azul-claro: #1351d8;
+    --color-primary: #1b357e;
+    --color-secondary: #1351d8;
 }
 
-@font-face{
+@font-face {
     font-family: "Antenna";
-    src: url("assets/font/ford-antenna-regular-xcnd-589558121012a.woff");
+    src: url("/assets/font/Antenna-Regular.otf") format("opentype");
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .material-icons-outlined {
@@ -37,6 +38,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: "Antenna", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -62,6 +64,7 @@ header {
     position: relative;
     padding: 4% 8%;
     height: 100px;
+    font-family: "Antenna", Arial, Helvetica, sans-serif;
 }
 
 .cabecalho {
@@ -74,7 +77,7 @@ header {
 }
 
 header > .cabecalho > img {
-    max-height: 60px;
+    max-height: 40px;
     width: auto;
 
     padding: 0;
@@ -159,6 +162,7 @@ header > .cabecalho > img {
     position: absolute;
     top: 31px;
     right: 25px;
+    border: 0;
     cursor: pointer;
     font-size: 30px;
     background-color: var(--cor-azul-escuro);
@@ -208,20 +212,22 @@ a > img {
     margin: 0;
     position: absolute;
     color: white;
-    font-size: 10vw;
+    font-size: 6vw;
     align-self: flex-end;
     text-align: center;
     justify-self: end;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    letter-spacing: 2px;
+    letter-spacing: -1px;
     font-weight: 100;
-    line-height: 11vw;
-    margin-bottom: 12px;
+    line-height: 10vw;
+    margin-bottom: 5px;
+    font-family: "Antenna", Arial, Helvetica, sans-serif;
+    
 }
 
 #titulo_Forte {
-    font-size: 15vw;
-
+    font-size: 13vw;
+    font-family: "Antenna", Arial, Helvetica, sans-serif;
 }
 
 #caixa_Informacao {
@@ -243,11 +249,13 @@ a > img {
     color: rgb(138, 138, 138);
     letter-spacing: 1px;
     font-weight: normal;
+    text-align: center;
 }
 
 .informacao {
     letter-spacing: 3px;
     font-weight: bold;
+    text-align: center;
 }
 
 .linha-vertical {
@@ -311,31 +319,41 @@ button a {
 footer {
     background-color: var(--cor-azul-escuro);
     width: 100vw;
-    height: 5vw;
-    max-height: 100px;
+    height: auto;
+    max-height: 150px;
     min-height: 80px;
     color: white;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 5vw;
+    padding: 10px;
 }
+
+.informacoes_Footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 80px;
+    font-size: small;
+    justify-items: stretch;
+    align-items: center;
+    padding: 10px;
+}
+
 
 .redes_Sociais {
     display: flex;
-
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    font-size: small;
+
 }
 
 .redes_Sociais > p {
-    width: auto;
+    width: 90px;
 }
 
 .logo_Redes > a > img {
-    width: 4vw;
+    width: 1.4rem;
     max-width: 40px;
     min-width: 20px;
     height: auto;
@@ -349,9 +367,20 @@ footer {
     transform: scale(1.2);
 }
 
+.copy_Right {
+    color: white;
+    font-size: small;
+    grid-column: 1/ span 2;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
 
-.copy_Right > img {
-    width: 100px;
+.copy_Right_Logo > img {
+    width: 80px;
     object-fit: contain;
+    display: flex;
+    justify-self: end;
+    align-self: center;
 }
 

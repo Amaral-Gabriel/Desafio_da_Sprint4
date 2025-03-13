@@ -37,6 +37,9 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    header > .cabecalho > img {
+        max-height: 50px;
+    }
 
     #itens {display: none}
 
@@ -112,7 +115,8 @@
         line-height: 9vw;
     }
     #titulo_Forte {
-        font-size: 12vw;
+        font-size: 10vw;
+        line-height: 6vw;
     }
     #caixa_Informacao {
         height: 20vw;
@@ -126,9 +130,11 @@
         font-size: 7vw;
         letter-spacing: 1px;
         line-height: 8vw;
+        margin-bottom: 10px;
     }
     #titulo_Forte {
-        font-size: 12vw;
+        font-size: 9vw;
+        line-height: 6vw;
     }
     #caixa_Informacao {
         height: 20vw;
@@ -145,6 +151,9 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    header > .cabecalho > img {
+        max-height: 60px;
+    }
     #imagem_Principal {
         width: 95%;
     }
@@ -164,11 +173,31 @@
         padding: 2vw;
     }
     .redes_Sociais {
-        margin-left: 2vw;
+        margin-left: 0vw;
     }
     #caixa_Informacao {
         height: 20vw;
         font-size: 2vw;
+    }
+
+    .informacoes_Footer {
+        grid-template-columns: 300px auto 300px;
+        grid-template-rows: auto;
+        
+    }
+
+
+    .copy_Right {
+        grid-column-start: 2;    /* Começa na linha vertical 1 */
+        grid-column-end: 2;      /* Termina na linha vertical 3 */
+        grid-row-start: 1;       /* Começa na linha horizontal 2 */
+        grid-row-end: 1;  
+        font-size: large;
+    }
+
+    .copy_Right_Logo > img {
+        grid-column: 3;
+        justify-self: center;
     }
 }
 
