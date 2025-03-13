@@ -115,11 +115,18 @@ Desafio_da_Sprint4/
 
 # Tela HOME
 
-![Tela Home em um laptop](https://github.com/user-attachments/assets/266dd821-631e-412f-b1f5-4c7cd95fef2e)
-![Tela Home em um laptop](https://github.com/user-attachments/assets/4bb54cf2-a6e2-4429-acb0-d02a960a2b81)
-<div align="center">
 
-![Tela Home em um smartphone](https://github.com/user-attachments/assets/de522706-02f0-4474-9abe-f7b9a24c93e1)
+![Tela-Laptop-Home_Superior](https://github.com/user-attachments/assets/8f6dbdbe-28d8-400b-9a82-eb32b3b6e7ba)
+![Tela-Laptop-Home_Inferior](https://github.com/user-attachments/assets/7c2bbcb8-52d9-41e7-b217-79342471999a)
+
+<div align="center">
+ 
+![Tela-Tablet-Home_Centro](https://github.com/user-attachments/assets/54a7372e-c886-47c2-b93d-fd3cd1e28a95)
+ 
+![Tela-Smartphone-Home_Superior](https://github.com/user-attachments/assets/3835f500-41c0-4cb4-9d8c-d5b2ee9e8039)
+ 
+![Tela-Smartphone-Home_Inferior](https://github.com/user-attachments/assets/07c2f03c-7a7c-4abf-bf7f-0d72063d0418)
+
 
 </div>
 
@@ -127,20 +134,23 @@ Desafio_da_Sprint4/
 
 # Tela Lançamentos
 
-![Tela de lançamento em um laptop](https://github.com/user-attachments/assets/855d6493-3ed3-4259-940b-60ec3d51d14e)
-![Tela de lançamento em um laptop](https://github.com/user-attachments/assets/e5c3d132-6401-4336-bdca-26a4200a511c)
+![Tela-Laptop-Lancamento_Centro](https://github.com/user-attachments/assets/a7ada3bc-f9f5-4ab3-98e1-2046fa728681)
+
 <div align="center">
 
-![Tela de lançamento em um smartphone](https://github.com/user-attachments/assets/ccf377a9-622b-42b7-9833-f2ea7dad5928)
-
+![Tela-Smartphone-Lancamento_Superior](https://github.com/user-attachments/assets/0efc02bd-7d7e-4183-9c1c-db1f162c5926)
+![Tela-Smartphone-Lancamento_Inferior](https://github.com/user-attachments/assets/74594d14-0343-45f1-9f0d-453bf250de36)
 </div>
 
 ---
 
 # Tela Contato
-![Tela de contato em um laptop](https://github.com/user-attachments/assets/0c43a1e9-9059-47d8-a543-ab181f7eb7ae)
+![Tela-Laptop-Contato_Centro](https://github.com/user-attachments/assets/2cd909b9-6bfe-4dce-818a-26ba987ae2a0)
+
 <div align="center">
 
-![Tela de contato em um smartphone](https://github.com/user-attachments/assets/5b37c997-e8f9-452e-b6fd-0000c420a2f4)
+![Tela-Smartphone-Contato_Inferior](https://github.com/user-attachments/assets/59c92240-08a8-4738-88c6-eccdc9cca05a)
+![Tela-Smartphone-Contato_Superior](https://github.com/user-attachments/assets/e539f2ff-782e-4724-b5e6-d81eb2b47ac9)
+
 
 </div>
